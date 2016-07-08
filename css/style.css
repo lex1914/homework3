@@ -23,6 +23,9 @@ h1 {
 	margin-bottom: 40px;
 }
 
+nav {
+	box-sizing: border-box;
+}
 .all_tab, .all_tab li {
 	padding: 0;
 	margin: 0;
