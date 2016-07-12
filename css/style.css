@@ -35,14 +35,20 @@ nav {
 
 .all_tab {
 	height: 40;  /* отступ создает блок для главного меню и его заливки цветом*/
-	background-color: #4d4c4c;
+	/*background-color: #4d4c4c;*/
 	box-sizing: border-box;
-}
+  background-image: -moz-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+  }
 
 	.all_tab li {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+	width: 140px;
+	height: 40px;
+
 }
 
 .all_tab li a {
@@ -53,7 +59,9 @@ nav {
 	font-family: 'Sans';
 	color: rgb(255, 255, 255);
 	line-height: 40px;
-	padding: 0 38px;
+	padding: 0 10px;
+	width: 120px;
+	/*height: 40px;*/
 }
  
  .all_tab li a:hover {
@@ -61,6 +69,9 @@ nav {
   	background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
   	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+	line-height: 40px;
+	padding: 0 8px;
+	width: 120px;
 }
  
 .content_page {
@@ -80,7 +91,7 @@ nav {
 .right_column {
 	float: left;
 	width: 240px;
-	height: 222px;
+	height: 216px;
 	margin-top: 40px;
 	border: solid 1px #c8c8c8; 
 	border-bottom: 0;
@@ -91,7 +102,7 @@ nav {
 	font-size: 13.3px;
     list-style: none;
 	border-bottom: solid 1px #c8c8c8;
-	padding: 11px 10px 10px 10px;
+	padding: 0px 0px 0px 0px;
 	margin: auto;
 	display: block;
 }
@@ -99,16 +110,21 @@ nav {
 .active {
 	text-decoration: none;
 	color: #2c2c2c;
-	box-sizing: border-box;
+	margin: 0 auto;
 }
 
-.active:hover {
+
+.click-color, .active:hover {
 	margin-left: 20px;
-	display: block;
 }
 
 .click-color:hover {
 	background-color: #f9f9f9;
+}
+
+.right_column .click-color .active {
+	padding: 10px;
+	display: block;
 }
 
 
