@@ -1,0 +1,73 @@
+
+ #dr {
+ 	width: 760px;
+ 	height: 480px;
+ 	background: grey;
+ }
+
+ p {
+	font-family: Arial;
+ 	font-size: 30pt;
+ 	font-weight: bold;
+ }
+
+ img {
+	float: right;
+	width: 680px;
+	margin-top: 40px;
+	margin-left: 40px;
+	/*border: 1px solid #c8c8c8;*/
+}
+
+.box {
+	width: 100px;
+	height: 500px;
+}
+
+.box1, .box2, .box3, .box4 {
+	width: 200px;
+	height: 200px;
+	border: solid 2px black;
+	border-radius: 50%;
+	position: absolute;
+} 
+
+.box1 {
+	top: 25px;
+	right: 25px;
+	background-color: yellow;
+}
+
+.box2 {
+	top: 45px;
+	right: 45px;
+	background-color: black;
+}
+
+.box3 {
+	top: 65px;
+	right: 65px;
+	background-color: yellow;
+}
+
+.box4 {
+	 top: 85px;
+	right: 85px;
+	background-color: black;
+}
+.box1:hover {
+	background-color: white;
+}
+
+.box2:hover {
+	background-color: black;
+}
+
+.box3:hover {
+	background-color: white;
+}
+
+.box4:hover {
+	background-color: black;
+	
+}
