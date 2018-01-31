@@ -42,7 +42,7 @@ console.log(typeof(Myarray));
 console.log(typeof(regexp));
 console.log(typeof(func));
 
-obj.name = 'Geis';
+obj.name = 'Geis'; // изменение 
 console.log(obj.name);
 Myarray[0] = 'art';
 Myarray[2] = 100;

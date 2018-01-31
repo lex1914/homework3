@@ -1,48 +1,41 @@
 /*@import "../css/reset.css";*/
-* {
-	margin: 0;
-	padding: 0;
+
+body {
+	background-color: #F9F9F9;
 }
 
-header {
+.wrapper {
 	width: 1060px;
-	padding-left: 45px;
-	padding-right: 45px;
-	padding-top: 50px;
+	margin: 0 auto;
 	background-color: white;
+	padding-bottom: 60px;
 	-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    margin: 0 auto;
-    box-sizing: border-box;
-    /*clear: both;*/
 }
 
 h1 {
 	display: inline-block;
-	margin-bottom: 40px;
+	padding-left: 35px;
 }
 
-nav {
-	box-sizing: border-box;
-}
-.all_tab, .all_tab li {
+.menu, .menu li {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	text-decoration: none;
 }
 
-.all_tab {
-	height: 40;  /* отступ создает блок для главного меню и его заливки цветом*/
-	/*background-color: #4d4c4c;*/
-	box-sizing: border-box;
+nav {
+	max-width: 970px;
+	margin: auto;
+	height: 40px;  /* отступ создает блок для главного меню и его заливки цветом*/
   background-image: -moz-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
   }
 
-	.all_tab li {
+	.menu li {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
@@ -51,7 +44,7 @@ nav {
 
 }
 
-.all_tab li a {
+.menu li a {
 	text-decoration: none;
 	display: inline-block;
 	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
@@ -64,7 +57,7 @@ nav {
 	/*height: 40px;*/
 }
  
- .all_tab li a:hover {
+ .menu li a:hover {
  	background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
   	background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
   	border-left: 1px solid #838383;
@@ -75,46 +68,46 @@ nav {
 }
  
 .content_page {
-	
-	width: 1060px;
-	background-color: white;
+	margin-top: 40px;
 	padding-left: 45px;
-	padding-right: 45px;
-	margin: 0 auto;
-	box-sizing: border-box;
-	-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    /*clear: both;*/
+	margin-bottom: 60px;
 }
 
 .right_column {
 	float: left;
 	width: 240px;
-	height: 216px;
-	margin-top: 40px;
-	border: solid 1px #c8c8c8; 
-	border-bottom: 0;
+	height: 240px;
+	margin: 0 auto;
+	padding: 0;
+	
 }
 
-.right_column li {
+.click-color {
+	width: 240px;
+	height: 40px;
 	font-family: "Sans";
 	font-size: 13.3px;
+	line-height: 40px;
     list-style: none;
+	border-right: solid 1px #c8c8c8;
+	border-left: solid 1px #c8c8c8;
 	border-bottom: solid 1px #c8c8c8;
-	padding: 0px 0px 0px 0px;
-	margin: auto;
-	display: block;
+	padding: 0;
 }
 
-.active {
+.click-color:first-child {
+	border-top: 1px solid #c8c8c8;
+}
+
+.links {
+	padding-left: 10px;
+	display: block;
 	text-decoration: none;
 	color: #2c2c2c;
-	margin: 0 auto;
 }
 
 
-.click-color, .active:hover {
+.links:hover {
 	margin-left: 20px;
 }
 
@@ -122,50 +115,36 @@ nav {
 	background-color: #f9f9f9;
 }
 
-.right_column .click-color .active {
-	padding: 10px;
-	display: block;
-}
-
-
 .images img {
 	float: left;
 	width: 680px;
-	margin-top: 40px;
-	margin-left: 40px;
+	margin-left: 45px;
 	border: 1px solid #c8c8c8;
 }
 
-p {
-	display: inline-flex;
-	width: 630px;
-	margin-top: 40px;
-	margin-bottom: 60px; 
+.content-page-text {
+	width: 680px;
 	margin-left: 275px;
-	margin-right: 25px;
+	padding-top: 40px;
+	padding-left: 25px;
 	font-family: 'Sans';
 	font-size: 13.3px;
-	padding-right: 25px;
-	padding-left: 25px;
 	text-align: left;
+	clear: both;
+}
+
+p {
+	margin: 0;
 }
 
 footer {
-	width: 1060px;
+	width: 970px;
 	margin: 0 auto;
-	padding-left: 45px;
-	padding-right: 45px;
-	padding-bottom: 60px;
-	box-sizing: border-box;
-	background-color: white;
-	-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.46);
-    /*clear: both;*/
 }
 	
 .panel {
-  font-size: 13.333px;
+	margin: 0;
+  font-size: 13px;
   font-family: "Sans";
   list-style: none;
   height: 40px;
@@ -175,14 +154,14 @@ footer {
 .panel li {
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-top: 10px;
+	line-height: 40px;
 	margin-right: 25px;
 	margin-left: 25px;
 	display: inline-block;
 }
 
-.width-reseved {
-	margin-left: 203px;
+.panel .width-reseved {
+	margin-left: 150px;
 }
 
   a {
